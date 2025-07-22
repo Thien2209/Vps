@@ -1,0 +1,11 @@
+name: VPS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  start-tmate-session:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
